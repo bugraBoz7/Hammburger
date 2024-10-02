@@ -1,0 +1,204 @@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";  // Layout dosyanızın yolunu belirtin.
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burgerler</title>
+    <link rel="icon" href="~/css/images.png" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: wheat; /* Arka plan rengini buğday rengi yaptık */
+        }
+
+        /* İçerik için boşluk (navbar sabit olduğundan üstte yer bırak) */
+        .content {
+            padding-top: 70px;
+            margin: 20px;
+        }
+
+        /* Başlık */
+        .menu-title {
+            font-size: 32px;
+            font-weight: bold;
+            color: #F23030;
+            background-color: #f8f8f8; /* Arka plan rengi */
+            border: 2px solid #F23030; /* Kenarlık rengi */
+            border-radius: 8px; /* Kenarların yuvarlanması */
+            padding: 10px; /* İç boşluk */
+            width: fit-content; /* İçeriğe göre genişlik */
+            margin: 0 auto 20px auto; /* Kutuyu ortalar ve alt boşluk ekler */
+            text-align: center; /* Başlık yazısını ortalar */
+        }
+
+        /* Ürün listesi */
+        .menu-item {
+            background-color: #a99c91;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .menu-item h3 {
+            margin: 0;
+            font-size: 24px;
+            color: white; /* Yazı rengi beyaz */
+            text-shadow: 2px 2px 0 #79717A, /* Sağ-alt gölge */
+                         -2px -2px 0 #79717A, /* Sol-üst gölge */
+                         2px -2px 0 #79717A, /* Sağ-üst gölge */
+                         -2px 2px 0 #79717A; /* Sol-alt gölge */
+        }
+
+        /* Ürün açıklaması */
+        .menu-item p {
+            margin: 5px 0;
+            font-size: 18px;
+        }
+
+        /* Ürün fiyatı */
+        .menu-item .price {
+            font-weight: bold;
+            color: #267365;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- İçerik -->
+    <div class="content">
+        <div class="menu-title">Burgerler</div>
+
+        <!-- Menü Ürünü 1 -->
+        <div class="menu-item">
+            <h3>Hamm Burger</h3>
+            <p>Ev yapımı burger ekmeği, dana burger köftesi, karamelize soğan, cheddar peyniri, kibrit patates, hamm sos ve patates kızartması.</p>
+            <p class="price">45 TL</p>
+        </div>
+
+        <!-- Menü Ürünü 2 -->
+        <div class="menu-item">
+            <h3>Füme Burger</h3>
+            <p>Ev yapımı burger ekmeği, dana burger köftesi, karamelize soğan, cheddar peyniri, dana antrikot füme, kibrit patates, hamm sos ve patates kızartması.</p>
+            <p class="price">35 TL</p>
+        </div>
+
+        <!-- Menü Ürünü 3 -->
+        <div class="menu-item">
+            <h3>Mantar Burger</h3>
+            <p>Ev yapımı burger ekmeği, dana burger köftesi, karamelize soğan, cheddar peyniri, kremalı mantar, kibrit patates, hamm sos ve patates kızartması.</p>
+            <p class="price">25 TL</p>
+        </div>
+
+        <!-- Menü Ürünü 4 -->
+        <div class="menu-item">
+            <h3>Beğendili Burger</h3>
+            <p>Ev yapımı burger ekmeği, dana burger köftesi, karamelize soğan, cheddar peyniri, közlenmiş patlıcan, kibrit patates, hamm sos ve patates kızartması.</p>
+            <p class="price">20 TL</p>
+        </div>
+
+        <!-- Menü Ürünü 5 -->
+        <div class="menu-item">
+            <h3>Pastırmalı Burger</h3>
+            <p>Ev yapımı burger ekmeği, dana burger köftesi, karamelize soğan, cheddar peyniri, dana pastırma, kibrit patates, hamm sos ve patates kızartması.</p>
+            <p class="price">30 TL</p>
+        </div>
+
+        <!-- Menü Ürünü 6 -->
+        <div class="menu-item">
+            <h3>Yangın Burger</h3>
+            <p>Ev yapımı burger ekmeği, dana burger köftesi, karamelize soğan, cheddar peyniri, yangın sos, domates, kibrit patates, hamm sos ve patates kızartması.</p>
+            <p class="price">30 TL</p>
+        </div>
+
+        <!-- Menü Ürünü 7 -->
+        <div class="menu-item">
+            <h3>Pesto Soslu Burger</h3>
+            <p>Ev yapımı burger ekmeği, dana burger köftesi, karamelize soğan, cheddar peyniri, pesto sos, domates, kibrit patates, hamm sos ve patates kızartması.</p>
+            <p class="price">30 TL</p>
+        </div>
+
+        <!-- Menü Ürünü 8 -->
+        <div class="menu-item">
+            <h3>Türk Usulu Burger</h3>
+            <p>Ev yapımı burger ekmeği, dana burger köftesi, karamelize soğan, kavurma, yumurta, kaşar peyniri, kibrit patates, hamm sos ve patates kızartması.</p>
+            <p class="price">30 TL</p>
+        </div>
+
+        <!-- Menü Ürünü 9 -->
+        <div class="menu-item">
+            <h3>Yeşillik Burger</h3>
+            <p>Ev yapımı burger ekmeği, dana burger köftesi, karamelize soğan, domates, cheddar peyniri, turşu, kıvırcık, kibrit patates, hamm sos ve patates kızartması.</p>
+            <p class="price">30 TL</p>
+        </div>
+
+        <!-- Menü Ürünü 10 -->
+        <div class="menu-item">
+            <h3>Tavuk Burger</h3>
+            <p>Ev yapımı burger ekmeği, tavuk burger köftesi, kaşar peyniri, kıvırcık, turşu, domates, kibrit patates, hamm sos ve patates kızartması.</p>
+            <p class="price">30 TL</p>
+        </div>
+
+        <!-- Menü Ürünü 11 -->
+        <div class="menu-item">
+            <h3>Mantar Tavuk Burger</h3>
+            <p>Ev yapımı burger ekmeği, tavuk burger köftesi, kremalı mantar, cheddar peyniri, kibrit patates, hamm sos ve patates kızartması.</p>
+            <p class="price">30 TL</p>
+        </div>
+
+        <!-- Menü Ürünü 12 -->
+        <div class="menu-item">
+            <h3>Hamm Special</h3>
+            <p>Ev yapımı burger ekmeği, dana burger köftesi, karamelize soğan, 2 adet cheddar peyniri, kremalı mantar, dana pastırma, dana antrikot füme, kibrit patates, hamm sos ve barbekü patates kızartması.</p>
+            <p class="price">30 TL</p>
+        </div>
+
+        <!-- Menü Ürünü 13 -->
+        <div class="menu-item">
+            <h3>Osmanlı Burger</h3>
+            <p>Ev yapımı burger ekmeği, dana burger köftesi, karamelize soğan, sucuk, kaşar peyniri, kibrit patates, hamm sos ve patates kızartması.</p>
+            <p class="price">30 TL</p>
+        </div>
+
+        <!-- Menü Ürünü 14 -->
+        <div class="menu-item">
+            <h3>Lokum Burger</h3>
+            <p>Ev yapımı burger ekmeği, dana bonfile, karamelize soğan, cheddar peyniri, kibrit patates, hamm sos ve patates kızartması.</p>
+            <p class="price">30 TL</p>
+        </div>
+
+        <!-- Menü Ürünü 15 -->
+        <div class="menu-item">
+            <h3>Beğendili Lokum Burger</h3>
+            <p>Ev yapımı burger ekmeği, dana bonfile, karamelize soğan, cheddar peyniri, beğendi, kibrit patates, hamm sos ve patates kızartması.</p>
+            <p class="price">30 TL</p>
+        </div>
+            <!-- Menü Ürünü 16 -->
+        <div class="menu-item">
+            <h3>Mantar Lokum Burger</h3>
+            <p>Ev yapımı burger ekmeği,dana bonfile,karamelize soğani,kremalı mantar,cheddar peyniri,kibrit patates,hamm sos ve patates kızartması.</p>
+            <p class="price">30 TL</p>
+        </div>
+
+        <!-- Menü Ürünü 17 -->
+        <div class="menu-item">
+            <h3>Çocuk Et Burger</h3>
+            <p>Ev yapımı burger ekmeği,dana burger köftesi,cheddar peyniri,kibrit patates,hamm sos ve patates kızartması.</p>
+            <p class="price">30 TL</p>
+        </div>
+
+        <!-- Menü Ürünü 18 -->
+        <div class="menu-item">
+            <h3>Çocuk Tavuk Burger</h3>
+            <p>Ev yapımı burger ekmeği,tavuk burger köftesi,kıvırcık,turşu,domates,kaşar peyniri,kibrit patates,hamm sos ve patates kızartması.</p>
+            <p class="price">30 TL</p>
+        </div>
+  </div>
+</body>
+</html>
